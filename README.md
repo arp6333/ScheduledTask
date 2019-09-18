@@ -1,11 +1,6 @@
 **About**
 
-This powershell script ('Script') can either create a scheduled task or an automatic task in windows Task Scheduler that runs the script 
-'UACLevel' (or any other custom script by modifying the code, see below). A scheduled task will run over a designated interval for a
-designated time. An automatic task will run when another task completes.
-
-Currently, this script will lower the UAC level to level 3 when the task 'RegisterDevicePolicyChange' completes. 
-RegisterDevicePolicyChange sets the UAC level to 4 at random intervals.
+This powershell script ('Script') can either create a scheduled task or an automatic task in windows Task Scheduler that calls another script. A scheduled task will run over a designated interval for a designated time. An automatic task will run when another task completes.
 
 Code built off of 
 
@@ -18,7 +13,7 @@ https://stackoverflow.com/questions/42801733/creating-a-scheduled-task-which-use
 **Instructions**
 
 Using an Administator PowerShell:
-1. Run "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass" to allow the script to run
+1. Run "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass" to allow the script to run for this session
 2. Run the file "./Script.ps1"
 
 Note:
@@ -27,7 +22,7 @@ If you move this folder, you will have to rerun "./Script.ps1" as the location h
 To remove Task:
 1. Open Task Scheduler
 2. Open Task Scheduler Library (left side)
-3. Delete task named "UACLevel" / "UACLevelAuto"
+3. Delete task named "-name-"
 
 **Modifications**
 
