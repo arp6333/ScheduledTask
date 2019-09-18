@@ -1,0 +1,12 @@
+Using an Administator PowerShell:
+1. Run "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+" to allow the script to run
+2. Run the file "./Script.ps1"
+
+Notes:
+If you move this folder, you will have to rerun "./Script.ps1" as the location has changed
+
+To remove Task:
+1. Open Task Scheduler
+2. Open Task Scheduler Library (left side)
+3. Delete task named "UACLevel" / "UACLevelAuto"
