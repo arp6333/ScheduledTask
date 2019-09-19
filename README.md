@@ -1,6 +1,6 @@
 **About**
 
-This powershell script ('Script') can either create a scheduled task or an automatic task in windows Task Scheduler that calls another script. A scheduled task will run over a designated interval for a designated time. An automatic task will run when another task completes.
+This powershell script ('Script.ps1') can either create a scheduled task or an automatic task in windows Task Scheduler that calls another script. A scheduled task will run over a designated interval for a designated time. An automatic task will run when another task completes.
 
 Code built off of 
 
@@ -22,7 +22,7 @@ Using an Administator PowerShell:
 2. Run the file "./Script.ps1"
 
 Note:
-If you move this folder, you will have to rerun "./Script.ps1" as the location has changed
+If you move this folder, you will have to rerun "./Script.ps1" as the location of the script to run has changed
 
 To remove Task:
 1. Open Task Scheduler
